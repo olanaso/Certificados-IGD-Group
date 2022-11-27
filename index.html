@@ -38,7 +38,7 @@
   
   
   <div class="mb-3">
-    <a id href="#" class="bg-blue-700 text-white px-4 py-2 rounded">Descargar Digital del Certificado</a>
+    <a id="file_certificado" target="_blank" href="#" class="bg-blue-700 text-white px-4 py-2 rounded">Descargar Digital del Certificado</a>
   </div>
 </form>
 
@@ -148,9 +148,10 @@ const estudiante = listadoestudiantes
 );
 //estudiante=estudiante[0]
 oestudiante=estudiante[0]
-console.log(oestudiante)
+//console.log(oestudiante)
 document.getElementById("txtestudiante").value=oestudiante.estudiantes
 document.getElementById("txtcodigo").value=oestudiante.nro
+document.getElementById("file_certificado").href="Certificados/"+oestudiante.archivo
 
 </script>
 </html>
