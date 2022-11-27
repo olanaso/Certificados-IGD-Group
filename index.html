@@ -148,10 +148,15 @@ const estudiante = listadoestudiantes
 );
 //estudiante=estudiante[0]
 oestudiante=estudiante[0]
+if(oestudiante){
 //console.log(oestudiante)
 document.getElementById("txtestudiante").value=oestudiante.estudiantes
 document.getElementById("txtcodigo").value=oestudiante.nro
 document.getElementById("file_certificado").href="Certificados/"+oestudiante.archivo
+}else{
+alert("EL CODIGO INGRESADO NO ESTA REGISTRADO ")
+}
+
 
 </script>
 </html>
